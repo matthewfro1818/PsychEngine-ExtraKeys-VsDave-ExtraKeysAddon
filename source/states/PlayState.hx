@@ -565,12 +565,8 @@ class PlayState extends MusicBeatState
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		noteGroup.add(strumLineNotes);
 
-		shaggyVoice = isShaggy && [
-			'warmup', 'house', 'house-2.5', 'insanity', 'insanity-2.5', 'polygonized', 'polygonized-2.5', 'blocked', 'blocked-2.5',
-			'corn-theft', 'corn-theft-2.5', 'maze', 'maze-2.5', 'splitathon', 'shredder', 'greetings', 'interdimensional', 'rano', 
-			'bonus-song', 'bonus-song-2.5', 'bot-trot', 'escape-from-california', 'adventure', 'mealie', 'indignancy', 'memory',
-			'roofs', 'supernovae', 'glitch', 'master', 'cheating', 'unfairness', 'kabunga', 'recursed', 'exploitation'
-		].contains(SONG.song.toLowerCase());
+		shaggyVoice = isShaggy && ['warmup', 'house', 'insanity', 'polygonized', 'blocked', 'corn-theft', 'maze', 'splitathon', 'shredder', 'greetings', 'interdimensional', 'rano', 'bonus-song', 'bot-trot', 'escape-from-california', 'adventure', 'mealie', 'indignancy', 'memory', 'roofs', 'supernovae', 'glitch', 'master', 'cheating', 'unfairness', 'kabunga', 'recursed', 'exploitation'].contains(SONG.song.toLowerCase());
+
 
 		if(ClientPrefs.data.timeBarType == 'Song Name')
 		{
